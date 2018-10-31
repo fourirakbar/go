@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Template Functions</title>
+    </head>
+    <body>
+        <p>
+            {{html "<h2>Testing</h2>"}}
+        </p>
+        {{if eq .Name "Bruce Wayne"}}
+            <p>I'm the batman</p>
+        {{else if ne .Name "Clark Kent"}}
+            <p>I'm neither Batman or Superman</p>
+        {{end}}
+        
+        <p>
+            {{.SayHello "Gotham citizen" "You are our hero!"}}
+        </p>
+
+        <p>
+            {{printf "%s because I'm %s" "You know why?" "Batman!"}}
+        </p>
+    </body>
+</html>
