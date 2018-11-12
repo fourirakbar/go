@@ -37,7 +37,7 @@
     </script>
 </head>
 <body>
-    <form id="user-form" method="post" action="/upload">
+    <form id="user-form" method="post" action="/upload" enctype="multipart/form-data">
         <input required multiple id="upload-file" type="file">
         <br />
         <button id="btn-upload" type="submit">Upload!</button>
